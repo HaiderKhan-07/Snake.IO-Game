@@ -1,0 +1,94 @@
+🐍 Snake Game (C# Windows Forms)
+
+A classic Snake Game built using **C# Windows Forms**, focusing on simplicity, clean UI design, and beginner-friendly game logic.
+
+---
+
+🎯 Project Overview
+
+This project recreates the traditional Snake game using basic **Windows Forms controls** instead of advanced graphics libraries.
+The goal was to understand game loops, UI handling, and event-driven programming in C#.
+
+---
+
+ 🎨 Design Choices
+
+ Visual Design
+
+* The snake and food are created using **Panel controls**.
+* Each panel represents one grid cell, making positioning and collision handling simple.
+* Panels are shown/hidden instead of opening new forms to keep the UI smooth.
+
+Layout
+
+* **Main Menu**: Start, Level Select, Exit
+* **Level Selection Panel**: Easy, Medium, Hard
+* **Game Panel**: Where the snake moves
+* **Side Panel**: Score, High Score, Level, Pause button
+
+---
+
+ 🧠 Game Logic
+
+* The snake is stored as a `List<Panel>`, where each panel is one body segment.
+* Each segment stores its grid position using the `Tag` property.
+* A **Timer** acts as the game loop and controls movement speed.
+
+---
+
+ ⚙ Difficulty Levels
+
+| Level  | Behavior                         |
+| ------ | -------------------------------- |
+| Easy   | Slow speed, wall wrap-around     |
+| Medium | Faster, wall collision ends game |
+| Hard   | Fastest speed, high difficulty   |
+
+Difficulty is managed by changing the timer interval.
+
+---
+
+ 🎮 Controls
+
+* **Arrow Keys / W A S D** → Move snake
+* **Spacebar / Pause Button** → Pause / Resume
+* Reverse direction is blocked to prevent instant collision.
+
+---
+
+🚀 Performance
+
+* Double buffering is enabled to reduce flickering.
+* Only required controls are updated during gameplay for smooth performance.
+
+---
+
+ 🎨 Customization
+
+* Snake color can be changed using menu options.
+* Score and High Score are displayed in real time.
+
+---
+
+ 🏁 Conclusion
+
+This project demonstrates:
+
+* Event-driven programming
+* UI state management
+* Basic game development concepts in C#
+
+The design is simple, readable, and easy to extend with new features.
+
+---
+
+ 🛠 Technologies Used
+
+* C#
+* .NET Windows Forms
+
+---
+
+📌 Author
+
+ Rana Haider Ali Khan
